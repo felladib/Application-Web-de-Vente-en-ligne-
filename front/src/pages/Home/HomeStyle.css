@@ -1,0 +1,439 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#home{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+#home_header{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    background-image: url("./../../assets/HomePageOpening.png");
+    background-size: cover; /* Utiliser l'image comme cover */
+    background-position: center; /* Centrer l'image */ 
+    background-repeat: no-repeat;
+}
+#home_header{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    align-items: flex-start;
+    padding-left: 12rem;
+    padding-top: 10rem;
+    
+}
+
+#home_header p{
+    
+    margin-bottom: 1rem;
+}
+
+#home_header p{
+
+    width: 30rem; 
+    font-size: 1.2rem ;
+   
+    line-height: 1.2rem;
+    letter-spacing:0.05rem ; 
+    color: aliceblue;
+    text-align: justify;
+
+}
+.p2{
+    margin-top: 2rem;
+    line-height: 2rem;
+    word-spacing: 0.1rem;
+}
+#home_header p:first-child{
+    
+    /* width: 10rem; */
+    font-size: 4rem ;
+    font-weight: 500; 
+    font-style:italic;
+    line-height: 3.5rem;
+    letter-spacing:0.1rem ; 
+    color: aliceblue;
+}
+#home_header span{
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+#home_header button{
+    margin-top : 2.2rem;
+    /* padding: 3rem; */
+    text-align: center;
+    min-height: 50px;
+    
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background-color: transparent;
+    /* border-radius: 5px 0px 0px 5px; */
+    border:1px solid white;
+    color:#FFF;
+    cursor: pointer;
+    outline: none; /* pour supprimer l outline de button  */
+    padding: 0 1rem;
+   
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+#home_header button a{
+    text-decoration: none;
+    text-align: center;
+    min-height: 50px;
+    color:#FFF;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#home_header button:hover a {
+    color: #634141; /* Couleur du texte du lien */
+}
+
+#home_header button:hover {
+    background-color: white; /* Fond du bouton */
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+#home_part1 {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px;
+    margin-top: 7rem;
+    height: 90vh;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home_part1_head p:first-child{
+    padding-bottom: 2rem;
+    font-size: medium;
+}
+.home_part1_head p:last-child{
+   padding-bottom: 4rem;
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+.home_part1_head p:last-child span{ 
+    font-style: italic;
+    font-weight: 300;
+}
+.home_part1_body{
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.home_part1_body > div {
+    flex: 1; /* Chaque élément flex a la même taille */
+}
+
+
+#home_part1 button{
+    margin-top : 1.5rem;
+    padding: 3rem;
+    text-align: center;
+    min-height: 50px;
+    
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background-color: transparent;
+    /* border-radius: 5px 0px 0px 5px; */
+    border:1px solid black;
+    color:#FFF;
+    cursor: pointer;
+    outline: none; /* pour supprimer l outline de button  */
+    padding: 0 1rem;
+   
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+#home_part1 button a{
+    text-decoration: none;
+    text-align: center;
+    min-height: 50px;
+    color:black;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#home_part1 button:hover a {
+    color: white; /* Couleur du texte du lien */
+}
+
+#home_part1 button:hover {
+    background-color: black; /* Fond du bouton */
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////////// */
+
+#home_part2{
+    margin-top: 0px;
+    display: flex;
+    height: 100vh;
+    color: white;
+}
+
+.home_part2_plein{
+    padding: 7rem;
+    flex: 1;
+    background-color: black;
+    
+    display: flex; /* Utilisation de flexbox pour organiser les éléments en ligne */
+    flex-direction: column;
+    /* justify-content: center; Pour ajouter un espace égal entre les éléments */
+    /* align-items: center; Pour aligner verticalement les éléments au centre */
+    
+
+}
+
+
+.home_part2_plein p:first-child{
+    text-decoration: none;
+    /* text-align: center; */
+    min-height: 50px;
+    color:#FFF;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+
+.home_part2_plein_title{
+
+    margin-top: 2rem;
+    text-decoration: none;
+    /* text-align: center; */
+    min-height: 50px;
+    color:#FFF;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.5px;
+}
+span{
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+.home_part2_plein_discription{
+    margin-top: 2rem;
+    text-decoration: none;
+    /* text-align: center; */
+    min-height: 50px;
+    color:#FFF;
+    width: 25rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+
+
+}
+.home_part2_vide{
+    flex: 1;
+    background-color: #FFF;
+}
+
+#home_part2 button{
+    margin-top : 4.4rem;
+    padding: 3rem;
+    text-align: center;
+    min-height: 50px;
+    
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background-color: transparent;
+    /* border-radius: 5px 0px 0px 5px; */
+    border:1px solid white;
+    color:black;
+    cursor: pointer;
+    outline: none; /* pour supprimer l outline de button  */
+    padding: 0 1rem;
+    background-color: white;
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+#home_part2 button a{
+    text-decoration: none;
+    text-align: center;
+    min-height: 50px;
+    color:black;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
+#home_part2 button:hover a {
+    color: white; /* Couleur du texte du lien */
+}
+
+#home_part2 button:hover {
+    background-color: black; /* Fond du bouton */
+}
+
+
+.home_part2_vide  img{
+    height: 35rem;
+    width: 39.5rem;
+    position: relative;
+    left :-5.5rem;
+    top:6rem;
+
+} 
+
+/* ////////////////////////////////////////////////// */
+
+
+#home_part3{
+    margin-top: 7rem;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* ///////////////////////////////////////////////////////: */
+
+#home_part4{
+   
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+}
+
+#home_part4 p:first-child{ 
+
+    margin-top: 1rem;
+    text-decoration: none;
+    text-align: center; 
+    min-height: 50px;
+    margin-bottom: 0px;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.5px;
+}
+.home_part4_plein{
+    margin-top: -4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_part4_vide{
+  
+    flex: 1;
+    background-color: black;
+}
+.boutique_{
+    
+    display: flex;
+    flex-direction: column;
+}
+.boutique_ img{
+    position: relative;
+    top: 11rem;
+    height: 30rem;
+    width: 20rem;
+}
+
+.boutique-link {
+   
+    
+    text-decoration: none;
+    
+    position: relative;
+    top: 42.5rem; 
+    left: 0;
+    z-index: 1;  
+}
+.boutique-link p:last-child {
+    font-family: 'Georgia', serif; 
+    color: white;
+    text-align: center; 
+    min-height: 40px;
+    font-weight: 800;
+    font-size: 2.5rem; 
+    line-height: 2.6rem;
+    letter-spacing: 0.5px;
+
+
+}
+.boutique-link p:first-child {
+    color: white;
+    /* font-size: 16px;  */
+    min-height: 40px;
+    font-weight: 400;
+    line-height: 2.6rem;
+    letter-spacing: 0.5px;
+
+  
+}
+
+/* //////////////////////////////CARD/////////////////////////////// */
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card img{
+    margin-bottom: 1rem;
+    height: 9rem;
+    width: 8.9rem;
+    
+}
+.card p{
+    padding: 1rem;
+    
+    font-size: 0.9rem;
+}
+.name{
+   
+    font-size: 0.9rem;
+    word-wrap: break-word; 
+    white-space: pre-wrap;
+}

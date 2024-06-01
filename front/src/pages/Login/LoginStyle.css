@@ -1,0 +1,161 @@
+/* styles.css */
+
+/* Style pour le conteneur principal */
+/* .container{
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    height: 100vh;
+    background-color: #bba6a6;
+
+    
+} */
+
+/* Style pour le formulaire */
+/* .container form {
+    margin-top: 5rem;
+    height: 49vh;
+    display: flex;
+    flex-direction: column; */
+    /* width: 70%;   */
+    /* border:1px solid #634141; */
+    /* margin-bottom: 20px; */
+    /* justify-content: center;
+    align-items: center; 
+
+   
+} */
+
+
+/* Style pour les champs de saisie */
+/* .container input[type="text"],
+.container input[type="password"] {
+    align-self: center;
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border-radius: 5px; */
+    /* text-align: center; */
+    /* border: 1px solid #ccc;
+    box-sizing: border-box;  Garantir que le padding ne s'ajoute pas à la largeur totale 
+} */
+
+/* Style pour le bouton de soumission */
+/* .container input[type="submit"] {
+    align-self: center;
+    text-align: center;
+    width: 95%;
+    padding: 13px;
+    background-color: #634141;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    
+} */
+
+/* Style pour le lien de navigation */
+
+
+
+.container form .signup{
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: -0.04;
+    text-align: center;
+    /* color: #634141; */
+}
+
+.container .link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #634141;
+
+}
+
+/* Style pour le lien de navigation au survol */
+.container .link:hover {
+    text-decoration: underline;
+}
+
+
+/* styles.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: #bba6a6;
+    /* background-image: url("c:/Users/ryan/Downloads/back3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.loginBox {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginBox .logo {
+    color: #634141;
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    font-size: 2rem;
+    line-height: 1rem ;
+    font-weight: bold;
+    letter-spacing: -0.04;
+    text-align: center;
+    
+    text-align: center;
+
+}
+
+.loginBox form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus {
+    border: 1.5px solid #634141 ;
+    outline: none;
+}
+
+.loginBox input[type="submit"] {
+    padding: 10px;
+    background-color: #634141;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginBox .signup {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.loginBox .signup a {
+    color: #bba6a6;
+    text-decoration: none;
+}

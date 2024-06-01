@@ -1,0 +1,116 @@
+let [notes, setNotes] = useState([])
+let {authTokens, logoutUser} = useContext(AuthContext)
+
+useEffect(()=> {
+    getNotes()
+}, [])
+
+let getNotes = async() =>{
+    let response = await fetch('http://127.0.0.1:8000/api/notes/', {
+        method:'GET',
+        headers:{
+            'Content-Type':'application/json',
+            //Bearer is in the settings.py in SimpleJWT there is AUTH_HEADER_TYPES set to Bearer. This is how you get you token. U can change it if you wish
+            'Authorization':'Bearer ' + String(authTokens.access)
+        }
+    })
+    let data = await response.json()
+    if(response.status === 200){
+        setNotes(data)
+    }else if(response.statusText === 'Unauthorized'){
+        logoutUser()
+    }
+    
+}
+
+
+
+//views of api in django :
+@api_view(['GET']) #We created a private route
+@permission_classes([IsAuthenticated]) #User has to be authenticated
+def getNotes(request):
+    user = request.user
+    notes = user.note_set.all()
+    serializer = NoteSerializer(notes, many=True)
+    return Response(serializer.data)
+
+//urls api :
+    path('notes/', views.getNotes),
+
+
+//---------------------------------------------------------------------------------------------------------
+
+# @api_view(['POST'])
+# def signup_user(request):
+#     username = request.data.get('firstname')
+#     username = request.data.get('lastname')
+#     username = request.data.get('username')
+#     password = request.data.get('password')
+#     email = request.data.get('email')
+    
+#     if not username or not password or not email:
+#         return Response({'success': False, 'message': 'Username, password, and email are required'}, status=400)
+    
+#     if user.objects.filter(username=username).exists() or user.objects.filter(email=email).exists():
+#         return Response({'success': False, 'message': 'Username or email already exists'}, status=400)
+    
+#     user = user.objects.create_user(username=username, email=email, password=password)
+    
+#     if user:
+#         serializer = ProfileSerializer(user)
+    
+#     return Response(serializer.data)
+
+
+------------------------------
+# path('signup/', views.signup_user),
+
+-----------------------------------
+
+@api_view(['GET']) #We created a private route
+def getOrder(request):
+    order = Order.objects.all()
+    serializer = OrderSerializer(order, many=True)
+    return Response(serializer.data)
+
+
+//---------------------------------------------------------------
+
+// const SignupUser = async (e) => {
+        // e.preventDefault();
+
+        // try {
+        //     let response = await fetch('http://127.0.0.1:8000/api/signup/', {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': 'application/json'
+        //         },
+        //         body: JSON.stringify({ 'username':e.target.username.value, 'password':e.target.password.value, 'email':e.target.email.value })
+        //     });
+
+        //     let data = await response.json();
+        //     if (data.status === 200) {
+        //         // setAuthTokens(data)
+        //         // Redirect to login page with username and password pre-filled
+        //         // history('/login?username=${username}&password=${password}');
+        //     } else {
+        //         alert('Failed to register user');
+        //     }
+        // } catch (error) {
+        //     console.error('Error registering user:', error);
+        //     alert('Failed to register user');
+        // }
+    // };
+
+
+    //---------------------------
+
+    // SignupUser:SignupUser,
+
+
+
+
+---Utilisation de useRef pour créer une référence à l'élément de menu déroulant :
+
+const dropdownRef = useRef(null);
+Nous utilisons useRef pour créer une référence (dropdownRef) à l'élément de menu déroulant. Cette référence nous permettra de savoir si un clic a eu lieu à l'intérieur ou à l'extérieur de cet élément.

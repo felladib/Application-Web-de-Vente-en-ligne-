@@ -1,0 +1,168 @@
+.boutique {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .boutique_body {
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  
+  #boutique_filter {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+
+  }
+  .categorie{
+    display: flex;
+    justify-content: space-between;
+  }
+  .categorie button{
+    background: white;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    margin-right: 2rem;
+
+  }
+  hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color:black;
+    width: 80%;
+    align-self: flex-start;
+    cursor: pointer;
+
+  }
+  .btn_filter{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    align-self: flex-start;
+    /* padding: 1rem 0 ; */
+    padding: 0.8rem 0px 0px 0rem;
+   
+    transition: color 0.2s ease-in-out;
+
+
+  }
+  btn_filter.selected {
+    font-weight: bold;
+  }
+
+  .btn_filter:hover{
+    /* font-weight: 800; */
+    color: rgb(156, 156, 156);
+
+  }
+  .selected {
+    font-weight: bold;
+  }
+
+
+
+
+  .boutique_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Ajoutez cette ligne pour que la boutique_content prenne tout l'espace disponible */
+  }
+  
+  .tri-produits {
+    margin-top: 5px;
+    align-self: flex-end;
+    margin-bottom: 10px; /* Ajoutez de l'espace en bas pour séparer l'input de tri des produits */
+  }
+  
+  .gird_prod {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Ajoutez de l'espace entre les produits */
+    margin-top: 3rem; /* Ajoutez de l'espace en haut pour séparer les produits du reste du contenu */
+  }
+  
+
+  
+
+  .tri-produits select {
+    /* appearance: none; Masque le titre du select */
+    
+    background-color: #ffffff; /* Couleur de fond */
+    border: 0.5px solid black; /* Bordure */
+    padding: 12px 20px; /* Espacement intérieur */
+    margin-top: 1rem;
+    margin-right: 2rem;
+    cursor: pointer; /* Curseur */
+    text-align: center;
+    outline: none;
+  }
+
+  .tri-produits select {
+  
+    padding-right: 30px; 
+   
+    }
+    .choix-tri  option{
+      text-align: center;
+    }
+
+
+/* 
+
+.boutique{
+    display: flex;
+    flex-direction: column;
+}
+
+.boutique_body{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#boutique_filter{
+    background-color: red;
+    width: 25%;
+}
+
+.boutique_content{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tri-produits{
+    
+}
+
+.gird_prod{
+    
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin: 1rem auto;
+    padding: 10px;
+}
+
+.gird_prod{
+    margin-top: 2rem;
+    flex:1
+
+} 
+.gird_prod img{
+    height: 6rem;
+    width: 6rem;
+}
+.gird_prod p{
+    font-size: 0.8rem;
+    text-align: center;
+    max-width: 12rem;
+} */

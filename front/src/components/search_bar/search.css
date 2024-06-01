@@ -1,0 +1,35 @@
+
+.search-bar {
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;   
+    background-color: black;
+}
+
+.search-container {
+    flex: 1; /* Le bouton de recherche occupe tout l'espace disponible */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Espacement entre les logos */
+}
+.search-input input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+
+/* .search-button {
+    Styles pour le bouton de recherche 
+} */
+
+.social-icons img {
+    width: 30px; /* Taille des logos */
+    height: 30px;
+}

@@ -1,0 +1,82 @@
+
+#SignUpPage {
+    margin: 0;
+    height: 85vh;
+    width: 100%;
+    background-color: #bba6a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SignUp {
+    width: 100%; /* Ajoutez une largeur de 100% pour que la boîte s'étende sur toute la largeur */
+    max-width: 400px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.logo {
+    color: #634141;
+    padding-top: 2rem;
+    padding-bottom: 2.2rem;
+    font-size: 2.1rem;
+    line-height: 1rem;
+    font-weight: bold;
+    letter-spacing: -0.04;
+    text-align: center;
+}
+
+/* Style pour le formulaire */
+#SignUp form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style pour les champs de saisie */
+#SignUp input[type="text"],
+#SignUp input[type="email"],
+#SignUp input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#SignUp input[type="text"]:focus,
+#SignUp input[type="email"]:focus,
+#SignUp input[type="password"]:focus {
+    border: 1px solid #634141;
+    outline: none;
+}
+
+/* Style pour le bouton de soumission */
+#SignUp input[type="submit"] {
+    padding: 10px;
+    background-color: #634141;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style pour les champs de saisie de noms */
+.names {
+    display: flex;
+    
+    
+}
+
+/* .names input[type="text"] {
+    margin-right: 6px;
+} */
+.names input[type="text"]:first-child{
+    margin-right: 3px;
+}
+.names input[type="text"]:last-child{
+    margin-left: 3px;
+
+}

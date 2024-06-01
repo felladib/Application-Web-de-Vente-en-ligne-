@@ -1,0 +1,130 @@
+
+.header {
+    height: 4.4rem;
+    background-color: #634141; /* Couleur de fond de la barre de navigation */
+    color: #fff; /* Couleur du texte */
+    padding: 10px; /* Espacement intérieur */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo p{
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 1rem ;
+    font-weight: 500;
+    letter-spacing: -0.04;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+}
+.header-links a{
+    margin-right:   2rem; /*Espacement entre les liens */
+    margin-left: 2rem;
+}
+.header a {
+    font-size: 1.2rem;
+    color: #fff; /* Couleur des liens */
+    text-decoration: none; /* Supprimer les soulignements par défaut */
+    
+}
+
+
+  
+.header a:hover {
+    color: #dfbaba /* Souligner les liens au survol */
+}
+
+.header button {
+    background-color: #fff; /* Couleur de fond du bouton */
+    color: #333; /* Couleur du texte du bouton */
+    border: none; /* Supprimer la bordure */
+    padding: 8px 12px; /* Espacement intérieur du bouton */
+    cursor: pointer; /* Curseur pointer pour indiquer l'interactivité */
+}
+  
+/* .header button:hover {
+    background-color: #ddd; Couleur de fond du bouton au survol 
+} */
+  
+.header-login-cart a{
+    margin-right: 2rem; /*Espacement entre les liens */
+
+}
+.header-login-cart{
+    display: flex;
+}
+.profil{
+    display: flex;
+    
+}
+
+
+.header {
+    position: relative; /* Définir la position relative pour permettre le positionnement absolu des éléments enfants */
+    /* Autres styles restent inchangés */
+}
+
+.profil {
+    position: relative; /* Définir la position relative pour permettre le positionnement absolu des éléments enfants */
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-right: 20px; */
+    position: relative; /* Définir la position relative pour permettre le positionnement absolu des éléments enfants */
+    /* align-self: center; */
+}
+
+.dropdown-content {
+    position: absolute; /* Utiliser une position absolue pour le menu déroulant */
+    top: 100%; /* Positionner le menu déroulant juste en dessous du bouton */
+    left: 0; /* Aligner le menu déroulant avec le côté gauche du bouton */
+    background-color: #634141; /* Couleur de fond du menu déroulant */
+    min-width: 145px; /* Largeur minimale du menu déroulant */
+    z-index: 1; /* Assurer que le menu déroulant est affiché au-dessus de tout autre contenu */
+    /* Autres styles restent inchangés */
+}
+
+.dropdown-content button{
+    /* padding-left: 0px; */
+    padding-top: 15px;
+    padding-bottom: 12px;
+    font-size: 17px;
+    
+    width: 100%;
+    background-color: #634141;
+    border: none;
+    color: white;
+    text-align: left; 
+}
+.dropdown-content button:hover{
+    color: #dfbaba;
+}
+
+.dropdown button{
+    
+    font-size: 19.2px;
+    background-color: #634141;
+    border: none;
+    color: white;
+}
+.header-login-cart{
+    justify-content: space-between;
+}
+
+.header_cart{
+    align-items: center;
+    text-align: center;
+}
+
+.header_cart{
+    padding-left: 20px; 
+   
+}

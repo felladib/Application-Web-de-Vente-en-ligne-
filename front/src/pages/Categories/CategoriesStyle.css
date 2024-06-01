@@ -1,0 +1,21 @@
+ 
+
+.body{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin: 1rem auto;
+    padding: 10px;
+}
+
+.prod{
+    margin-top: 2rem;
+    flex:1
+
+} 
+.prod img{
+    height: 12rem;
+    width: 12rem;
+}
