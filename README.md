@@ -27,16 +27,16 @@ Pour exécuter ce projet localement, suivez les étapes ci-dessous :
    ```bash
    cd backend
    pip install -r requirements.txt
-Lancez le serveur Django :
-bash
-Copier le code
+3.**Lancez le serveur Django :**
+```bash
 python manage.py runserver
-Installez les dépendances frontend :
-bash
-Copier le code
+```
+4.**Installez les dépendances frontend :**
+```bash
 cd frontend
 npm install
-Lancez l'application React :
-bash
-Copier le code
+```
+5.**Lancez l'application React :**
+```bash
 npm start
+```
