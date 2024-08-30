@@ -22,7 +22,7 @@ Ce projet est une application web de vente de maquillage en ligne, conçue pour 
 
 Pour exécuter ce projet localement, suivez les étapes ci-dessous :
 
-1. **Clonez le dépôt :** `git clone https://github.com/nom-utilisateur/projet-maquillage.git`
+1. **Clonez le dépôt :** `https://github.com/felladib/Application-Web-de-Vente-en-ligne-.git`
 2. **Installez les dépendances backend :**
    ```bash
    cd backend
