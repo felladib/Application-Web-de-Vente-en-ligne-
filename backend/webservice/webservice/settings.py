@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'website',
     'webservice',
     'rest_framework',
-    'rest_framework_simplejwt.token_blacklist',
+    'rest_framework_simplejwt.token_blacklist', # pour le black liste de refresh token, si comme si vas cree une table blacklist dans la base de données , et a chaque fois qu'un refresh token se génére il vas stocker l'ancien refresh token dans la base de données.  donc apres cette modification on doit executer une migration 
     'corsheaders',
 
 ]
@@ -58,8 +58,8 @@ REST_FRAMEWORK = {
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=90),
-    "ROTATE_REFRESH_TOKENS": True,
-    "BLACKLIST_AFTER_ROTATION": True,
+    "ROTATE_REFRESH_TOKENS": True, # true : le refreshe token ne sera pas expirer tantque vous connctez pendant le 90 jours
+    "BLACKLIST_AFTER_ROTATION": True, #true : l'ancient refresh token sera supprimer lorsuqe a new refresh token est genéré
     "UPDATE_LAST_LOGIN": False,
 
     "ALGORITHM": "HS256",

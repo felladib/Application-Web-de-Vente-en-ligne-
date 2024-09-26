@@ -1,0 +1,9 @@
+.single{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .singleContainer{
+        flex: 6;
+    }
+
+}

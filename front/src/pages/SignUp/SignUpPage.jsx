@@ -1,7 +1,8 @@
 import React, { useState, useContext } from 'react';
 import AuthContext from '../../context/AuthContext';
 import './SignupStyle.css'
-
+// ajouter le signe up avec facebook or compte_google
+// ajouter l'ajoute d'un image 
 const SignUpPage = () => {
         const { signupUser } = useContext(AuthContext);
         const [formData, setFormData] = useState({

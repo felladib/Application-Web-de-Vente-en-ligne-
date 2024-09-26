@@ -34,14 +34,22 @@ class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
 
 
-@api_view(['GET']) 
+@api_view(['GET'])  # C’est un décorateur fourni par Django REST Framework.Il indique que la vue getRoutes accepte uniquement les requêtes HTTP de type GET.
 def getRoutes(request):
-    routes = [
-        '/api/token',
-        '/api/token/refresh',
+    routes = [ #chacune représentant une route (ou endpoint) de l'API.
+        '/api/token', # Endpoint pour obtenir un access token et un refresh token en envoyant des informations d'identification valides.
+        '/api/token/refresh', #Endpoint pour obtenir un nouveau access token en fournissant un refresh token valide.
     ]
 
     return Response(routes)
+'''
+Ce code crée une API REST qui renvoie une liste de routes disponibles pour 
+l'authentification par token JWT
+
+'''
+
+
+
 
 @api_view(['GET']) #We created a private route
 def getProducts(request):

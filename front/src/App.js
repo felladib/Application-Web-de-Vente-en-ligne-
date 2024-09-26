@@ -20,6 +20,7 @@ import BoutiquePage from './pages/Boutique/BoutiquePage';
 import ProductDetailsPage from './pages/Product/ProductDetailsPage';
 import OrderDetailsPage from './pages/cart/OrederDetailsPage';
 
+
 function App() {
   return (
     <div className="App">
@@ -46,6 +47,8 @@ function App() {
             {/* definir la route pour la product details */}
             <Route path="/product/:id" element={<ProductDetailsPage/>} />
             <Route path="/order-details" element={<OrderDetailsPage />} />
+
+
           </Routes>
         </AuthProvider>
       </Router>

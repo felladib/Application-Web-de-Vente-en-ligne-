@@ -8,15 +8,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Madefor, Helvetica Neue, Helvetica, Arial, メイリオ, meiryo, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, sans-serif;
-    font-family: "Poppins", sans-serif;  
+    /* font-family: Madefor, Helvetica Neue, Helvetica, Arial, メイリオ, meiryo, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, sans-serif; */
+    /* font-family: "Poppins", sans-serif;   */
    
-    font-family: "Wix Madefor Display", Helvetica Neue, Helvetica, Arial, メイリオ, meiryo, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, sans-serif;
-    font-family: Arial, sans-serif; /* Police sans-serif */
-    font-family: 'Times New Roman', serif; /* Police serif */
-    font-family: 'Courier New', monospace; /* Police monospace */
-    font-family: Verdana, sans-serif; /* Police sans-serif */
-    font-family: 'Georgia', serif; /* Police serif */
+    /* font-family: "Wix Madefor Display", Helvetica Neue, Helvetica, Arial, メイリオ, meiryo, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, sans-serif; */
+    /* font-family: Arial, sans-serif; Police sans-serif */
+    /* font-family: 'Times New Roman', serif; Police serif */
+    /* font-family: 'Courier New', monospace; Police monospace */
+    /* font-family: Verdana, sans-serif; Police sans-serif */
+    /* font-family: 'Georgia', serif; Police serif */
 
     font-family: 'Lato', sans-serif; 
     

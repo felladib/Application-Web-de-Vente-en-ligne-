@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 # from website.models import Product
-
+# ajouter l'image de user
 class Category(models.Model):
     name = models.CharField(max_length=100)
 
